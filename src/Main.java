@@ -14,7 +14,10 @@ public class Main {
         fruits.add("Potato");
         fruits.add("Dragonfruit");
 
-        fruits.set(1, "Orange");
-        System.out.println(fruits.get(1));
+        List<String> subFruits = fruits.subList(2, 4);
+
+        for(String subFruit: subFruits) {
+            System.out.println(subFruit);
+        }
     }
 }
