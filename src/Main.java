@@ -14,7 +14,7 @@ public class Main {
         fruits.add("Potato");
         fruits.add("Dragonfruit");
 
-        int index = fruits.indexOf("Banana");
-        System.out.println(index);
+        fruits.set(1, "Orange");
+        System.out.println(fruits.get(1));
     }
 }
