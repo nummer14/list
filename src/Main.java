@@ -1,15 +1,16 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        Set<String> fruits = new TreeSet<>();
+        Map<String, Integer> fruitPrices = new HashMap<>();
 
-        fruits.add("Banana");
-        fruits.add("Apple");
-        fruits.add("Cherry");
+        fruitPrices.put("사과", 17980);
+        fruitPrices.put("배", 10320);
+        fruitPrices.put("수박", 15920);
+        fruitPrices.put("멜론", 10630);
 
-        for (String fruit:fruits) {
-            System.out.println(fruit);
-        }
+
+        System.out.println(fruitPrices.size());
     }
 }
