@@ -1,23 +1,15 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        List<String> fruits = new ArrayList<>();
+        Set<String> fruits = new TreeSet<>();
 
-        fruits.add("Mango");
-        fruits.add("Bbanana");
-        fruits.add("Apple");
-        fruits.add("Tomato");
-        fruits.add("Cherry");
         fruits.add("Banana");
-        fruits.add("Potato");
-        fruits.add("Dragonfruit");
+        fruits.add("Apple");
+        fruits.add("Cherry");
 
-        List<String> subFruits = fruits.subList(2, 4);
-
-        for(String subFruit: subFruits) {
-            System.out.println(subFruit);
+        for (String fruit:fruits) {
+            System.out.println(fruit);
         }
     }
 }
