@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -15,11 +14,10 @@ public class Main {
         fruits.add("Potato");
         fruits.add("Dragonfruit");
 
-        fruits.remove("Tomato");
-        fruits.remove(5);
+        System.out.println(fruits.size());
 
-        if(fruits.contains("Kiwi")) {
-            System.out.println("Kiwi는 포함되어 있습니다.");
-        }
+        fruits.clear();
+
+        System.out.println(fruits.size());
     }
 }
